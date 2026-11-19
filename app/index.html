@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden Hour Cover Studio — GTA-style cover art maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">GH</span>
+    <div>
+      <h1>Golden Hour Cover Studio</h1>
+      <p>Turn your photo into a sunset-poster cover — offline, in your browser.</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <label class="file-btn">Add photo
+      <input id="photo" type="file" accept="image/*" hidden>
+    </label>
+    <button id="export" class="export-btn">Export PNG</button>
+  </div>
+</header>
+
+<main class="studio">
+  <section class="preview-col">
+    <div class="canvas-wrap">
+      <canvas id="cover" width="1080" height="1080"></canvas>
+    </div>
+    <p id="status" class="status">Pick a photo, drag any panel to frame it, then export.</p>
+  </section>
+
+  <aside class="controls">
+    <section class="panel-group">
+      <h2>Layout</h2>
+      <div class="seg" id="layoutSeg">
+        <button data-layout="poster" class="active">Poster</button>
+        <button data-layout="grid">Grid</button>
+        <button data-layout="strip">Strip</button>
+      </div>
+      <p class="hint">Poster: hero + 2 stacked panels. Grid: 2×2. Strip: hero + 3 rows.</p>
+    </section>
+
+    <section class="panel-group">
+      <h2>Colour grade</h2>
+      <div class="seg" id="gradeSeg">
+        <button data-grade="golden" class="active">Golden Hour</button>
+        <button data-grade="neon">Neon Nights</button>
+        <button data-grade="heat">Vice Heat</button>
+        <button data-grade="noir">Coast Noir</button>
+      </div>
+    </section>
+
+    <section class="panel-group">
+      <h2>Export size</h2>
+      <div class="seg" id="sizeSeg">
+        <button data-size="1080x1080" class="active">1080 × 1080</button>
+        <button data-size="1080x1350">1080 × 1350</button>
+        <button data-size="1920x1080">1920 × 1080</button>
+      </div>
+    </section>
+
+    <section class="panel-group">
+      <h2>Caption</h2>
+      <label class="field">Kicker
+        <input id="kicker" type="text" value="SOLMAR BAY" maxlength="24">
+      </label>
+      <label class="field">Title
+        <input id="title" type="text" value="GOLDEN HOUR" maxlength="20">
+      </label>
+      <label class="field">Tagline
+        <input id="tagline" type="text" value="every street is a stage" maxlength="48">
+      </label>
+    </section>
+
+    <section class="panel-group">
+      <h2>Panels</h2>
+      <div id="panelList" class="panel-list"></div>
+      <p class="hint">Drag a panel on the cover to pan it, scroll to zoom, or use its sliders. Click a panel to select it, then “Add photo” replaces its photo.</p>
+    </section>
+
+    <section class="panel-group">
+      <h2>Sample photos</h2>
+      <div class="samples">
+        <button data-sample="photos/woman-convertible.jpg">Woman + convertible</button>
+        <button data-sample="photos/fisherman-pier.jpg">Fisherman on the pier</button>
+        <button data-sample="photos/neon-street.jpg">Neon street</button>
+        <button data-sample="samples/boulevard.jpg">Boulevard</button>
+        <button data-sample="samples/pier.jpg">Pier at dusk</button>
+      </div>
+      <p class="hint">Samples are original or free to use. Your own photos never leave your machine.</p>
+    </section>
+  </aside>
+</main>
+
+<footer class="foot">
+  <p>Golden Hour Cover Studio — an original cover maker. No Rockstar Games logo, artwork, character or font is used. Fonts Anton &amp; Pacifico ship under the SIL Open Font License (see app/fonts/OFL.txt).</p>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
