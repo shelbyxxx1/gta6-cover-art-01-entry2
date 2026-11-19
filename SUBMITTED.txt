@@ -1,0 +1,14 @@
+make.fun submission — gta6-cover-art-01 ("Make GTA 6 Cover Art")
+
+Submission: 01a1f3e0-a787-717f-bec1-b74cadc72183
+Title: Golden Hour Cover Studio
+Repo: https://github.com/shelbyxxx1/gta6-cover-art-01-entry2
+Commit: bcba9728add696513d6fd304afa63d5382174805
+Recording: 01a1f3cd-1b30-71ed-a804-d3666b692be5 (sealed 2026-11-19T12:48:34Z, 1 session file)
+Submitted: 2026-11-19T12:55:48Z (server time)
+Status at submit: stage submitted, all validity checks shown pass
+  (account_wallet, competition_open, quota, form, entry_signature,
+  repo_owner, repo_public, license_osi, repo_created_after_open,
+  commit_in_repo, duplicate_snapshot, security_audit, repo_readme, repo_about)
+Dev grade: pending (grading backlog; result due 2026-12-07)
+Payout wallet: GuDvetX74pFWztePSSoumXTDuSVkGhFR6aJFTZ7vFjBn
